@@ -1,0 +1,28 @@
+## YAML description of interface elements 
+## AA and BB
+## Begun 2022-11-21
+
+panels:
+  police:      {imgFn: "1_1", text: Police Department}
+  directory:   {imgFn: "1_2", text: Directory}
+  cityCouncil: {imgFn: "3_1", text: City Council}
+  contactUs:   {imgFn: "5_3", text: Contact Us}
+  sports:      {imgFn: "4_1", text: Sports}
+  weather:     {imgFn: "5_1", text: Weather}
+  careers:     {imgFn: "2_2", text: Careers}
+  calender:    {imgFn: "3_2", text: Calender}
+  recreation:  {imgFn: "4_2", text: Recreation}
+  restaurants: {imgFn: "5_2", text: Restaurants}
+  housing:     {imgFn: "1_3", text: Housing}
+  transport:   {imgFn: "2_3", text: Transport}
+  map:         {imgFn: "3_3", text: Map}
+  events:      {imgFn: "4_3", text: Events}
+
+
+groups:
+  a: [restaurants, recreation, sports, events]
+  b: [police ,cityCouncil, weather, calender, maps]
+  c: [directory,careers,housing,transport,contactUs]
+  
+
+### end ###
