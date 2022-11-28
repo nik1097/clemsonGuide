@@ -20,9 +20,9 @@ panels:
 
 
 groups:
-  a: [restaurants, recreation, sports, events]
-  b: [police ,cityCouncil, weather, calender, maps]
-  c: [directory,careers,housing,transport,contactUs]
+  Events and Recreation: [restaurants, recreation, sports, events]
+  City Info: [police ,cityCouncil, weather, calender, maps]
+  Jobs and resources: [directory,careers,housing,transport,contactUs]
   
 
 ### end ###
