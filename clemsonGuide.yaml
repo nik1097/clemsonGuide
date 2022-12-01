@@ -3,26 +3,27 @@
 ## Begun 2022-11-21
 
 panels:
-  police:      {imgFn: "1_1", text: Police Department}
-  directory:   {imgFn: "1_2", text: Directory}
-  cityCouncil: {imgFn: "3_1", text: City Council}
-  contactUs:   {imgFn: "5_3", text: Contact Us}
-  sports:      {imgFn: "4_1", text: Sports}
-  weather:     {imgFn: "5_1", text: Weather}
-  careers:     {imgFn: "2_2", text: Careers}
-  calender:    {imgFn: "3_2", text: Calender}
-  recreation:  {imgFn: "4_2", text: Recreation}
-  restaurants: {imgFn: "5_2", text: Restaurants}
-  housing:     {imgFn: "1_3", text: Housing}
-  transport:   {imgFn: "2_3", text: Transport}
-  map:         {imgFn: "3_3", text: Map}
-  events:      {imgFn: "4_3", text: Events}
+  police:      {imgFn: "images/1_1.png", text: Police Department, dimension: [0, 0], url: 'https://clemsonpd.org/'}
+  university:  {imgFn: "images/1_2.png", text: University, dimension: [0, 1], url: 'https://www.clemson.edu/'}
+  directory:   {imgFn: "images/2_1.png", text: Directory, dimension: [1, 0], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  cityCouncil: {imgFn: "images/1_3.png", text: City Council, dimension: [0, 2], url: 'https://www.clemsoncity.org/CityGovernment/CityofClemsonCouncil,Boards,andCommissions/CityCouncil/tabid/572/Default.aspx'}
+  contactUs:   {imgFn: "images/3_5.png", text: Contact Us, dimension: [2, 4], url: 'https://www.clemson.edu/about/index.html'}
+  sports:      {imgFn: "images/1_4.png", text: Sports, dimension: [0, 3], url: 'https://clemsontigers.com/'}
+  weather:     {imgFn: "images/1_5.png", text: Weather, dimension: [0, 4], url: 'https://weather.com/weather/tenday/l/Clemson+SC?canonicalCityId=1d7fdf92ac8f6fbbf8f8e380e5434d51549d54a4282d6977491f1e2381ddccc4'}
+  careers:     {imgFn: "images/2_2.png", text: Careers, dimension: [1, 1], url: 'https://www.governmentjobs.com/careers/cityofclemson'}
+  calender:    {imgFn: "images/2_3.png", text: Calendar, dimension: [1, 2], url: 'https://www.clemsoncity.org/Calendar/tabid/537/Default.aspx'}
+  recreation:  {imgFn: "images/2_4.png", text: Recreation, dimension: [1, 3], url: 'https://www.clemsoncity.org/Departments/ParksandRecreation/Facilities/tabid/316/Default.aspx'}
+  restaurants: {imgFn: "images/2_5.png", text: Restaurants, dimension: [1, 4], url: 'https://www.google.com/maps/search/restaurants+near+Clemson,+SC/@34.6869347,-82.8396129,16z/data=!3m1!4b1'}
+  housing:     {imgFn: "images/3_1.png", text: Housing, dimension: [2, 0], url: 'https://www.apartments.com/clemson-sc/'}
+  transport:   {imgFn: "images/3_2.png", text: Transport, dimension: [2, 1], url: 'https://www.catbus.com/'}
+  map:         {imgFn: "images/3_3.png", text: Map, dimension: [2, 2], url: 'https://goo.gl/maps/B9fSTNfwn8vY7yW17'}
+  events:      {imgFn: "images/3_4.png", text: Events, dimension: [2, 3], url: 'https://www.clemsoncity.org/Departments/ParksandRecreation/EventsandPrograms/tabid/315/Default.aspx'}
 
 
 groups:
   Events and Recreation: [restaurants, recreation, sports, events]
-  City Info: [police ,cityCouncil, weather, calender, maps]
-  Jobs and resources: [directory,careers,housing,transport,contactUs]
+  City Info: [police, cityCouncil, weather, calender, maps]
+  Jobs and resources: [directory, careers, housing, transport, contactUs]
   
 
 ### end ###

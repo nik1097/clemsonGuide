@@ -1,0 +1,28 @@
+## YAML description of interface elements 
+## AA and BB
+## Begun 2022-11-21
+
+panels:
+  police:      {imgFn: "images/1_1.png", text: Police Department, dimension: ['left', 10, 50, 'n'], url: 'https://clemsonpd.org/'}
+  directory:   {imgFn: "images/2_1.png", text: Directory, dimension: ['left', 10, 50, 'n'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  cityCouncil: {imgFn: "images/1_3.png", text: City Council, dimension: ['left', 10, 50, 'n'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  contactUs:   {imgFn: "images/3_5.png", text: Contact Us, dimension: ['left', 10, 50, 'n'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  sports:      {imgFn: "images/1_4.png", text: Sports, dimension: ['left', 10, 50, 'n'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  weather:     {imgFn: "images/1_5.png", text: Weather, dimension: ['bottom', 0, 250, 'se'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  careers:     {imgFn: "images/2_2.png", text: Careers, dimension: ['top', 60, 60, 'nw'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  calender:    {imgFn: "images/2_3.png", text: Calender, dimension: ['top', 70, 60, 'nw'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  recreation:  {imgFn: "images/2_4.png", text: Recreation, dimension: ['top', 80, 60, 'nw'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  restaurants: {imgFn: "images/2_5.png", text: Restaurants, dimension: ['top', 90, 60, 'nw'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  housing:     {imgFn: "images/3_1.png", text: Housing, dimension: ['top', 100, 60, 'nw'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  transport:   {imgFn: "images/3_2.png", text: Transport, dimension: ['top', 30, 60, 'nw'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  map:         {imgFn: "images/3_3.png", text: Map, dimension: ['top', 10, 60, 'nw'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+  events:      {imgFn: "images/3_4.png", text: Events, dimension: ['top', 90, 60, 'nw'], url: 'https://clemsoncity.org/Contact/tabid/172/Default.aspx'}
+
+
+groups:
+  Events and Recreation: [restaurants, recreation, sports, events]
+  City Info: [police, cityCouncil, weather, calender, maps]
+  Jobs and resources: [directory, careers, housing, transport, contactUs]
+  
+
+### end ###
