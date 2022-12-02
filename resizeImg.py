@@ -33,8 +33,28 @@ faq_head = Image.open('images/FAQ/FAQ_header.png')
 resized_image = faq_head.resize((800, 80), Image.Resampling.LANCZOS)
 resized_image.save('images/FAQ/FAQ_header_resize.png')
 
+faq_icon = Image.open('images/icons/FAQ_icon.png')
+resized_image = faq_icon.resize((80, 80), Image.Resampling.LANCZOS)
+resized_image.save('images/icons/FAQ_icon_resize.png')
+
+chat_icon = Image.open('images/icons/Chat_icon.png')
+resized_image = chat_icon.resize((80, 80), Image.Resampling.LANCZOS)
+resized_image.save('images/icons/Chat_icon_resize.png')
+
 faq_body = Image.open('images/FAQ/FAQ_body.png')
 resized_image = faq_body.resize((800, 500), Image.Resampling.LANCZOS)
 resized_image.save('images/FAQ/FAQ_body_resize.png')
+
+desc_body = Image.open('images/home/Description.png')
+resized_image = desc_body.resize((800, 100), Image.Resampling.LANCZOS)
+resized_image.save('images/home/Description_resize.png')
+
+knowMore_icon = Image.open('images/home/knowMore_icon.png')
+resized_image = knowMore_icon.resize((200, 80), Image.Resampling.LANCZOS)
+resized_image.save('images/home/knowMore_icon_resize.png')
+
+header = Image.open('images/home/clemsonHeader.png')
+resized_image = header.resize((800, 120), Image.Resampling.LANCZOS)
+resized_image.save('images/home/clemsonHeader_resize.png')
 
 ### end ###
