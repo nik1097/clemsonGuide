@@ -29,4 +29,12 @@ for i in range(xTiles):
     outFn = "%s/%i_%i.png" % (imgTargFn, j+1, i+1)
     resized_image.save(outFn)
 
+faq_head = Image.open('images/FAQ/FAQ_header.png')
+resized_image = faq_head.resize((800, 80), Image.Resampling.LANCZOS)
+resized_image.save('images/FAQ/FAQ_header_resize.png')
+
+faq_body = Image.open('images/FAQ/FAQ_body.png')
+resized_image = faq_body.resize((800, 500), Image.Resampling.LANCZOS)
+resized_image.save('images/FAQ/FAQ_body_resize.png')
+
 ### end ###
