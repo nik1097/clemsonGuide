@@ -57,4 +57,9 @@ header = Image.open('images/home/clemsonHeader.png')
 resized_image = header.resize((800, 120), Image.Resampling.LANCZOS)
 resized_image.save('images/home/clemsonHeader_resize.png')
 
+header = Image.open('images/home/home.png')
+resized_image = header.resize((200, 80), Image.Resampling.LANCZOS)
+resized_image.save('images/home/home_resize.png')
+
+
 ### end ###

@@ -18,7 +18,7 @@ bg = PhotoImage(file = "bckgrnd.png")
 # Show image using label
 label1 = Label(image = bg)
 label1.place(x = 0, y = 0)
-
+home_icon=PhotoImage(file="images/home/home_resize.png")
 def openUrl(url):
     webbrowser.open_new(url)
 
@@ -35,6 +35,8 @@ def menu_window():
     top1 = Toplevel()
     top1.title("Menu window")
     top1.geometry("1000x800")
+
+
     #bg = PhotoImage(file = "bckgrnd.png")
 
     label1 = Label(top1, image = bg)
@@ -44,7 +46,7 @@ def menu_window():
     #buttonfaq.image = image_pd_button
     buttonfaq.grid(row=0, column = 1, padx = 0, pady = (20, 10))
 
-    buttonchat = Button(top1, image = chat_icon, highlightthickness=0, bd=0)
+    buttonchat = Button(top1, image = home_icon, highlightthickness=0, bd=0)
     #buttonfaq.image = image_pd_button
     buttonchat.grid(row=0, column = 5, padx = 0, pady = (20, 10))
 
@@ -61,12 +63,13 @@ def faq_window():
 
     faq_head = PhotoImage(file = "images/FAQ/FAQ_header_resize.png")
     faq_body = PhotoImage(file = "images/FAQ/FAQ_body_resize.png")
+    home_icon=PhotoImage(file="images/home/home_resize.png")
 
     label1 = Label(top, image = bg)
     label1.place(x = 0, y = 0)
     
-    buttonfaq = Button(top, image = faq_icon, highlightthickness=0, command = faq_window)
-    buttonfaq.grid(row=1, column = 1, padx = 0, pady = (20, 10))
+    #buttonfaq = Button(top, image = faq_icon, highlightthickness=0, command = faq_window)
+    #buttonfaq.grid(row=1, column = 1, padx = 0, pady = (20, 10))
 
     label2 = Label(top, image = faq_head)
     label2.image = faq_head
@@ -75,6 +78,12 @@ def faq_window():
     label2 = Label(top, image = faq_body)
     label2.image = faq_body
     label2.place(x = 80, y = 150)
+    
+    label3=Button(top,image=home_icon,highlightthickness=0,command=menu_window)
+    label3.image=home_icon
+    label3.place(x=375,y=700)
+
+
 
 faq_icon = PhotoImage(file="images\\icons\\FAQ_icon_resize.png")
 buttonfaq = Button(image = faq_icon, highlightthickness=0, command = faq_window)
