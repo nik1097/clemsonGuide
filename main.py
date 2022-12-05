@@ -46,10 +46,6 @@ def menu_window():
     #buttonfaq.image = image_pd_button
     buttonfaq.grid(row=0, column = 1, padx = 0, pady = (20, 10))
 
-    buttonchat = Button(top1, image = home_icon, highlightthickness=0, bd=0)
-    #buttonfaq.image = image_pd_button
-    buttonchat.grid(row=0, column = 5, padx = 0, pady = (20, 10))
-
     for key, value in data['panels'].items():
         filename = value['imgFn']
         dimensions = value['dimension']
@@ -73,17 +69,15 @@ def faq_window():
 
     label2 = Label(top, image = faq_head)
     label2.image = faq_head
-    label2.place(x = 80, y = 50)
+    label2.place(x = 60, y = 150)
 
     label2 = Label(top, image = faq_body)
     label2.image = faq_body
-    label2.place(x = 80, y = 150)
+    label2.place(x = 60, y = 250)
     
-    label3=Button(top,image=home_icon,highlightthickness=0,command=menu_window)
+    label3=Button(top, image=home_icon, highlightthickness=0, command=menu_window)
     label3.image=home_icon
-    label3.place(x=375,y=700)
-
-
+    label3.place(x = 875, y = 40)
 
 faq_icon = PhotoImage(file="images\\icons\\FAQ_icon_resize.png")
 buttonfaq = Button(image = faq_icon, highlightthickness=0, command = faq_window)
@@ -105,6 +99,10 @@ hlabel.place(x = 100, y = 200)
 knowMore_icon = PhotoImage(file="images\\home\\knowMore_icon_resize.png")
 buttonknowMore = Button(image = knowMore_icon, highlightthickness=0, command = menu_window)
 buttonknowMore.place(x = 400, y = 500)
+
+sos = PhotoImage(file="images\\home\\sos_resize.png")
+sosButton = Button(image = sos, highlightthickness=0)
+sosButton.place(x = 875, y = 600)
 
 # Execute tkinter
 root.mainloop()

@@ -1,0 +1,5 @@
+certifi @ file:///C:/b/abs_ac29jvt43w/croot/certifi_1665076682579/work/certifi
+Pillow==9.3.0
+pygame==2.1.2
+PyYAML==6.0
+wincertstore==0.2
